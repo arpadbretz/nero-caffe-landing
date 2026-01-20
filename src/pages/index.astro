@@ -1,0 +1,490 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Nero Caffe | A Prémium Kávé">
+	<nav class="glass">
+		<div class="container nav-content">
+			<div class="logo">
+				<img src="/logo.png" alt="Nero Caffe Logo" class="logo-img" />
+			</div>
+			<ul class="nav-links">
+				<li><a href="#about">Az Élmény</a></li>
+				<li><a href="#menu">Kínálat</a></li>
+				<li><a href="#interior">Helyszín</a></li>
+				<li>
+					<a href="#contact" class="btn btn-primary btn-small"
+						>Asztalfoglalás</a
+					>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+	<main>
+		<section class="hero">
+			<div class="hero-bg">
+				<img src="/hero.png" alt="Coffee pouring" />
+				<div class="overlay"></div>
+			</div>
+			<div class="container hero-content">
+				<h1 class="fade-in">
+					Minden cseppben <br /><span class="text-gold">Művészet</span
+					>
+				</h1>
+				<p class="fade-in delay-1">
+					Fedezze fel a Nero Caffe világát, ahol a tradíció és a
+					modern elegancia találkozik egy csésze tökéletes
+					eszpresszóban.
+				</p>
+				<div class="hero-actions fade-in delay-2">
+					<a href="#menu" class="btn btn-primary"
+						>Étlap Megtekintése</a
+					>
+					<a href="#about" class="btn btn-outline">Történetünk</a>
+				</div>
+			</div>
+		</section>
+
+		<section id="about" class="about">
+			<div class="container grid-2">
+				<div class="about-text">
+					<h2 class="section-title">
+						A Pörkölés <span class="text-gold">Mesterei</span>
+					</h2>
+					<p>
+						A Nero Caffe nem csupán egy kávézó. Ez egy szentély
+						azoknak, akik értékelik az élet apró, de annál fontosabb
+						luxusait. Kézzel válogatott szemeink a világ legjobb
+						ültetvényeiről érkeznek, hogy minden reggel frissen
+						pörkölve kerüljenek az Ön csészéjébe.
+					</p>
+					<div class="features">
+						<div class="feature-item">
+							<span class="gold-dot"></span>
+							<p>100% Arabica különlegességek</p>
+						</div>
+						<div class="feature-item">
+							<span class="gold-dot"></span>
+							<p>Helyben pörkölt frissesség</p>
+						</div>
+						<div class="feature-item">
+							<span class="gold-dot"></span>
+							<p>Díjnyertes baristák</p>
+						</div>
+					</div>
+				</div>
+				<div class="about-image">
+					<div class="image-stack">
+						<img
+							src="/beans.png"
+							alt="Roasted coffee beans"
+							class="img-main"
+						/>
+						<div class="image-accent"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="menu" class="menu glass-section">
+			<div class="container">
+				<div class="section-header text-center">
+					<h2 class="section-title">
+						Kiemelt <span class="text-gold">Kínálatunk</span>
+					</h2>
+					<p class="section-subtitle">
+						Válogatás legnépszerűbb italkülönlegességeinkből
+					</p>
+				</div>
+				<div class="menu-grid">
+					<div class="menu-item glass">
+						<div class="menu-info">
+							<h3>Signature Espresso</h3>
+							<p>Sötét pörkölésű, csokoládés tónusokkal</p>
+						</div>
+						<span class="price">890 Ft</span>
+					</div>
+					<div class="menu-item glass">
+						<div class="menu-info">
+							<h3>Gold Velvet Latte</h3>
+							<p>Selymes tejkrém, arany szemcsékkel díszítve</p>
+						</div>
+						<span class="price:">1450 Ft</span>
+					</div>
+					<div class="menu-item glass">
+						<div class="menu-info">
+							<h3>Nero Cold Brew</h3>
+							<p>12 órán át csepegtetett intenzív élmény</p>
+						</div>
+						<span class="price">1290 Ft</span>
+					</div>
+					<div class="menu-item glass">
+						<div class="menu-info">
+							<h3>Pistachio Croissant</h3>
+							<p>Vajas tészta, házi pisztácia krémmel</p>
+						</div>
+						<span class="price">1150 Ft</span>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="interior" class="interior">
+			<div class="container">
+				<div class="interior-content grid-2">
+					<div class="interior-image">
+						<img
+							src="/interior.png"
+							alt="Cafe interior"
+							class="rounded"
+						/>
+					</div>
+					<div class="interior-text">
+						<h2 class="section-title">
+							Időtlen <span class="text-gold">Elegancia</span>
+						</h2>
+						<p>
+							Belső terünket úgy alakítottuk ki, hogy a nyugalom
+							és az üzleti elegancia tökéletes egyensúlyát
+							nyújtsa. Akár egy reggeli üzleti megbeszélésről,
+							akár egy esti elcsendesedésről van szó, a Nero Caffe
+							a tökéletes háttér.
+						</p>
+						<a href="#gallery" class="btn btn-outline"
+							>Galéria megtekintése</a
+						>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="contact" class="contact">
+			<div class="container text-center">
+				<h2 class="section-title">
+					Látogasson <span class="text-gold">Meg Minket</span>
+				</h2>
+				<p>1051 Budapest, Arany János utca 12.</p>
+				<div class="contact-details">
+					<p>Hétfő - Péntek: 07:00 - 20:00</p>
+					<p>Szombat - Vasárnap: 09:00 - 21:00</p>
+				</div>
+				<a href="tel:+361234567" class="phone-link">+36 1 234 5678</a>
+			</div>
+		</section>
+	</main>
+
+	<footer class="glass">
+		<div class="container footer-content">
+			<div class="footer-logo">
+				<img
+					src="/logo.png"
+					alt="Nero Caffe Logo"
+					class="footer-logo-img"
+				/>
+			</div>
+			<p>
+				&copy; 2024 Nero Caffe. Minden jog fenntartva. | Prometheus
+				Digital Design
+			</p>
+			<div class="social-links">
+				<a href="#">Instagram</a>
+				<a href="#">Facebook</a>
+			</div>
+		</div>
+	</footer>
+</Layout>
+
+<script>
+	const nav = document.querySelector("nav");
+	window.addEventListener("scroll", () => {
+		if (window.scrollY > 100) {
+			nav.classList.add("nav-scrolled");
+		} else {
+			nav.classList.remove("nav-scrolled");
+		}
+	});
+</script>
+
+<style>
+	/* Header / Nav */
+	nav {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		z-index: 1000;
+		padding: 1.5rem 0;
+		transition: all 0.4s ease;
+		border-bottom: 1px solid transparent;
+	}
+	.nav-scrolled {
+		padding: 1rem 0;
+		background: rgba(10, 10, 10, 0.8);
+		backdrop-filter: blur(15px);
+		border-bottom: 1px solid var(--glass-border);
+	}
+	.nav-content {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.logo-img {
+		height: 40px;
+	}
+	.nav-links {
+		display: flex;
+		list-style: none;
+		align-items: center;
+		gap: 2.5rem;
+	}
+	.nav-links a {
+		font-size: 0.9rem;
+		font-weight: 500;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+	}
+	.nav-links a:hover {
+		color: var(--primary);
+	}
+	.btn-small {
+		padding: 0.6rem 1.5rem;
+		font-size: 0.75rem;
+	}
+
+	/* Hero */
+	.hero {
+		height: 100vh;
+		display: flex;
+		align-items: center;
+		position: relative;
+		overflow: hidden;
+		padding: 0;
+	}
+	.hero-bg {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: -1;
+	}
+	.hero-bg img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+	.overlay {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: linear-gradient(
+			90deg,
+			rgba(10, 10, 10, 0.9) 0%,
+			rgba(10, 10, 10, 0.4) 100%
+		);
+	}
+	.hero-content {
+		max-width: 700px;
+	}
+	.hero h1 {
+		font-size: 4.5rem;
+		line-height: 1.1;
+		margin-bottom: 2rem;
+	}
+	.text-gold {
+		color: var(--primary);
+	}
+	.hero p {
+		font-size: 1.25rem;
+		color: var(--text-muted);
+		margin-bottom: 3rem;
+		max-width: 500px;
+	}
+	.hero-actions {
+		display: flex;
+		gap: 1.5rem;
+	}
+
+	/* General Section Styles */
+	.section-title {
+		font-size: 3rem;
+		margin-bottom: 2rem;
+	}
+	.grid-2 {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 4rem;
+		align-items: center;
+	}
+	.text-center {
+		text-align: center;
+	}
+
+	/* About */
+	.about-text p {
+		font-size: 1.1rem;
+		color: var(--text-muted);
+		margin-bottom: 2rem;
+	}
+	.features {
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+	}
+	.feature-item {
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+	}
+	.gold-dot {
+		display: block;
+		width: 8px;
+		height: 8px;
+		background-color: var(--primary);
+		border-radius: 50%;
+	}
+	.image-stack {
+		position: relative;
+	}
+	.img-main {
+		border-radius: 4px;
+		position: relative;
+		z-index: 2;
+	}
+	.image-accent {
+		position: absolute;
+		top: 20px;
+		left: 20px;
+		width: 100%;
+		height: 100%;
+		border: 1px solid var(--primary);
+		z-index: 1;
+	}
+
+	/* Menu */
+	.glass-section {
+		background: linear-gradient(
+			180deg,
+			var(--bg) 0%,
+			#111 50%,
+			var(--bg) 100%
+		);
+	}
+	.section-header {
+		margin-bottom: 4rem;
+	}
+	.section-subtitle {
+		color: var(--text-muted);
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		font-size: 0.8rem;
+	}
+	.menu-grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 2rem;
+	}
+	.menu-item {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 2rem;
+		border-radius: 4px;
+	}
+	.menu-info h3 {
+		font-size: 1.25rem;
+		margin-bottom: 0.5rem;
+	}
+	.menu-info p {
+		color: var(--text-muted);
+		font-size: 0.9rem;
+	}
+	.price {
+		color: var(--primary);
+		font-weight: 600;
+		font-family: "Playfair Display", serif;
+	}
+
+	/* Interior */
+	.rounded {
+		border-radius: 8px;
+	}
+
+	/* Contact */
+	.contact-details {
+		margin: 2rem 0;
+		color: var(--text-muted);
+	}
+	.phone-link {
+		font-size: 2rem;
+		font-family: "Playfair Display", serif;
+		color: var(--primary);
+	}
+
+	/* Footer */
+	footer {
+		padding: 4rem 0;
+		margin-top: 4rem;
+	}
+	.footer-content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 2rem;
+	}
+	.footer-logo-img {
+		height: 30px;
+		opacity: 0.7;
+	}
+	.social-links {
+		display: flex;
+		gap: 2rem;
+	}
+	.social-links a {
+		font-size: 0.8rem;
+		color: var(--text-muted);
+	}
+
+	/* Animations */
+	.fade-in {
+		opacity: 0;
+		transform: translateY(30px);
+		animation: fadeInUp 1s forwards cubic-bezier(0.165, 0.84, 0.44, 1);
+	}
+	.delay-1 {
+		animation-delay: 0.3s;
+	}
+	.delay-2 {
+		animation-delay: 0.6s;
+	}
+
+	@keyframes fadeInUp {
+		to {
+			opacity: 1;
+			transform: translateY(0);
+		}
+	}
+
+	/* Mobile Responsive */
+	@media (max-width: 768px) {
+		.nav-links {
+			display: none;
+		}
+		.hero h1 {
+			font-size: 3rem;
+		}
+		.grid-2 {
+			grid-template-columns: 1fr;
+			gap: 2rem;
+		}
+		.menu-grid {
+			grid-template-columns: 1fr;
+		}
+		section {
+			padding: 4rem 0;
+		}
+	}
+</style>
