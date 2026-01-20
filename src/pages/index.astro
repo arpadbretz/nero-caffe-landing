@@ -2,226 +2,349 @@
 import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout title="Nero Caffe | A Prémium Kávé">
-	<nav class="glass">
+<Layout title="Nero Caffe | Art of Coffee">
+	<!-- Custom Cursor -->
+	<div class="cursor"></div>
+	<div class="cursor-follower"></div>
+
+	<nav class="nav">
 		<div class="container nav-content">
-			<div class="logo">
-				<img src="/logo.png" alt="Nero Caffe Logo" class="logo-img" />
+			<div class="logo-container">
+				<img src="/logo.png" alt="Nero Caffe" class="logo-img" />
 			</div>
-			<ul class="nav-links">
-				<li><a href="#about">Az Élmény</a></li>
-				<li><a href="#menu">Kínálat</a></li>
-				<li><a href="#interior">Helyszín</a></li>
-				<li>
-					<a href="#contact" class="btn btn-primary btn-small"
-						>Asztalfoglalás</a
-					>
-				</li>
-			</ul>
+			<div class="nav-links">
+				<a href="#about" class="nav-item">Philosophy</a>
+				<a href="#menu" class="nav-item">The Menu</a>
+				<a href="#interior" class="nav-item">Atelier</a>
+				<a href="#contact" class="btn btn-outline btn-small">Inquiry</a>
+			</div>
 		</div>
 	</nav>
 
 	<main>
-		<section class="hero">
-			<div class="hero-bg">
-				<img src="/hero.png" alt="Coffee pouring" />
-				<div class="overlay"></div>
+		<!-- Hero Section with Parallax -->
+		<section class="hero" id="home">
+			<div class="hero-image-wrapper">
+				<img
+					src="/hero.png"
+					alt="Pure Espresso"
+					class="hero-image"
+					id="parallax-bg"
+				/>
+				<div class="hero-overlay"></div>
 			</div>
 			<div class="container hero-content">
-				<h1 class="fade-in">
-					Minden cseppben <br /><span class="text-gold">Művészet</span
-					>
-				</h1>
-				<p class="fade-in delay-1">
-					Fedezze fel a Nero Caffe világát, ahol a tradíció és a
-					modern elegancia találkozik egy csésze tökéletes
-					eszpresszóban.
-				</p>
-				<div class="hero-actions fade-in delay-2">
-					<a href="#menu" class="btn btn-primary"
-						>Étlap Megtekintése</a
-					>
-					<a href="#about" class="btn btn-outline">Történetünk</a>
-				</div>
-			</div>
-		</section>
-
-		<section id="about" class="about">
-			<div class="container grid-2">
-				<div class="about-text">
-					<h2 class="section-title">
-						A Pörkölés <span class="text-gold">Mesterei</span>
-					</h2>
-					<p>
-						A Nero Caffe nem csupán egy kávézó. Ez egy szentély
-						azoknak, akik értékelik az élet apró, de annál fontosabb
-						luxusait. Kézzel válogatott szemeink a világ legjobb
-						ültetvényeiről érkeznek, hogy minden reggel frissen
-						pörkölve kerüljenek az Ön csészéjébe.
+				<div class="hero-text">
+					<span class="eyebrow fade-in">EST. 2024</span>
+					<h1 class="hero-title reveal-text active">
+						<span>Transcending</span>
+						<span class="text-gold text-serif">The Routine</span>
+					</h1>
+					<p class="hero-desc fade-in delay-1">
+						Where the science of roasting meets the poetry of the
+						pour. Experience coffee in its most elevated form.
 					</p>
-					<div class="features">
-						<div class="feature-item">
-							<span class="gold-dot"></span>
-							<p>100% Arabica különlegességek</p>
-						</div>
-						<div class="feature-item">
-							<span class="gold-dot"></span>
-							<p>Helyben pörkölt frissesség</p>
-						</div>
-						<div class="feature-item">
-							<span class="gold-dot"></span>
-							<p>Díjnyertes baristák</p>
-						</div>
-					</div>
-				</div>
-				<div class="about-image">
-					<div class="image-stack">
-						<img
-							src="/beans.png"
-							alt="Roasted coffee beans"
-							class="img-main"
-						/>
-						<div class="image-accent"></div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section id="menu" class="menu glass-section">
-			<div class="container">
-				<div class="section-header text-center">
-					<h2 class="section-title">
-						Kiemelt <span class="text-gold">Kínálatunk</span>
-					</h2>
-					<p class="section-subtitle">
-						Válogatás legnépszerűbb italkülönlegességeinkből
-					</p>
-				</div>
-				<div class="menu-grid">
-					<div class="menu-item glass">
-						<div class="menu-info">
-							<h3>Signature Espresso</h3>
-							<p>Sötét pörkölésű, csokoládés tónusokkal</p>
-						</div>
-						<span class="price">890 Ft</span>
-					</div>
-					<div class="menu-item glass">
-						<div class="menu-info">
-							<h3>Gold Velvet Latte</h3>
-							<p>Selymes tejkrém, arany szemcsékkel díszítve</p>
-						</div>
-						<span class="price:">1450 Ft</span>
-					</div>
-					<div class="menu-item glass">
-						<div class="menu-info">
-							<h3>Nero Cold Brew</h3>
-							<p>12 órán át csepegtetett intenzív élmény</p>
-						</div>
-						<span class="price">1290 Ft</span>
-					</div>
-					<div class="menu-item glass">
-						<div class="menu-info">
-							<h3>Pistachio Croissant</h3>
-							<p>Vajas tészta, házi pisztácia krémmel</p>
-						</div>
-						<span class="price">1150 Ft</span>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section id="interior" class="interior">
-			<div class="container">
-				<div class="interior-content grid-2">
-					<div class="interior-image">
-						<img
-							src="/interior.png"
-							alt="Cafe interior"
-							class="rounded"
-						/>
-					</div>
-					<div class="interior-text">
-						<h2 class="section-title">
-							Időtlen <span class="text-gold">Elegancia</span>
-						</h2>
-						<p>
-							Belső terünket úgy alakítottuk ki, hogy a nyugalom
-							és az üzleti elegancia tökéletes egyensúlyát
-							nyújtsa. Akár egy reggeli üzleti megbeszélésről,
-							akár egy esti elcsendesedésről van szó, a Nero Caffe
-							a tökéletes háttér.
-						</p>
-						<a href="#gallery" class="btn btn-outline"
-							>Galéria megtekintése</a
+					<div class="hero-cta fade-in delay-2">
+						<a href="#menu" class="btn btn-primary"
+							>Discover the Menu</a
+						>
+						<a href="#about" class="link-luxury"
+							>Our Story <span class="arrow">→</span></a
 						>
 					</div>
 				</div>
 			</div>
+			<div class="scroll-indicator">
+				<div class="mouse"></div>
+				<span>Scroll to explore</span>
+			</div>
 		</section>
 
-		<section id="contact" class="contact">
-			<div class="container text-center">
-				<h2 class="section-title">
-					Látogasson <span class="text-gold">Meg Minket</span>
-				</h2>
-				<p>1051 Budapest, Arany János utca 12.</p>
-				<div class="contact-details">
-					<p>Hétfő - Péntek: 07:00 - 20:00</p>
-					<p>Szombat - Vasárnap: 09:00 - 21:00</p>
+		<!-- Philosophy Section -->
+		<section id="about" class="philosophy">
+			<div class="glow-accent" style="top: 10%; right: -5%;"></div>
+			<div class="container split-layout">
+				<div class="split-image scroll-reveal">
+					<div class="image-frame">
+						<img
+							src="/beans.png"
+							alt="Selected Beans"
+							class="reveal-img"
+						/>
+						<div class="frame-border"></div>
+					</div>
 				</div>
-				<a href="tel:+361234567" class="phone-link">+36 1 234 5678</a>
+				<div class="split-content scroll-reveal">
+					<span class="eyebrow">The Philosophy</span>
+					<h2 class="section-title">
+						The Alchemy of <span class="text-serif"
+							>Black Gold</span>
+					</h2>
+					<p class="text-large">
+						Every bean tells a story of its origin, tempered by fire
+						and brought to life through precision. At Nero Caffe, we
+						don't just serve caffeine; we curate moments of clarity.
+					</p>
+					<div class="philosophies">
+						<div class="phil-item">
+							<span class="num">01</span>
+							<div>
+								<h3>Origin First</h3>
+								<p>
+									Sourcing only from single-estate farms that
+									practice regenerative agriculture.
+								</p>
+							</div>
+						</div>
+						<div class="phil-item">
+							<span class="num">02</span>
+							<div>
+								<h3>Precision Roast</h3>
+								<p>
+									Small-batch roasting calibrated to the
+									humidity and altitude of the day.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Horizontal Scroll / Featured Section -->
+		<section class="collection" id="menu">
+			<div class="collection-header container">
+				<h2 class="section-title text-center">
+					The <span class="text-gold">Nero</span> Collection
+				</h2>
+			</div>
+			<div class="horizontal-scroll">
+				<div class="card glass">
+					<span class="card-num">01</span>
+					<h3>Velvet Espresso</h3>
+					<p>
+						Our signature dark roast with notes of Venezuelan cacao
+						and toasted walnut.
+					</p>
+					<span class="card-price">$6.00</span>
+					<div class="card-line"></div>
+				</div>
+				<div class="card glass highlight">
+					<span class="card-num">02</span>
+					<h3>Gold Dust Latte</h3>
+					<p>
+						Symphony of oat-silk and double-shot gold, topped with
+						edible 24k leaf.
+					</p>
+					<span class="card-price">$12.00</span>
+					<div class="card-line"></div>
+				</div>
+				<div class="card glass">
+					<span class="card-num">03</span>
+					<h3>Midnight Cold Brew</h3>
+					<p>
+						Steeped for 18 hours at precise 4°C, filtered through
+						ceramic silk.
+					</p>
+					<span class="card-price">$8.00</span>
+					<div class="card-line"></div>
+				</div>
+				<div class="card glass">
+					<span class="card-num">04</span>
+					<h3>Kyoto Drip</h3>
+					<p>
+						Slow-extraction method revealing the hidden jasmine
+						notes in our Geisha beans.
+					</p>
+					<span class="card-price">$15.00</span>
+					<div class="card-line"></div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Atmosphere Section -->
+		<section id="interior" class="atmosphere">
+			<div class="glow-accent" style="bottom: 10%; left: -5%;"></div>
+			<div class="container atmosphere-grid">
+				<div class="atm-text scroll-reveal">
+					<h2 class="section-title">
+						An Atelier for <span class="text-serif"
+							>The Senses</span>
+					</h2>
+					<p>
+						Designed with a palette of deep obsidian and warm brass,
+						our space is an extension of our coffee: refined,
+						balanced, and timeless.
+					</p>
+					<div class="atm-details">
+						<div class="det">
+							<span>Acoustics</span> — Low-fidelity jazz, analog only.
+						</div>
+						<div class="det">
+							<span>Comfort</span> — Italian velvet and bespoke mahogany.
+						</div>
+					</div>
+				</div>
+				<div class="atm-image-large scroll-reveal">
+					<img
+						src="/interior.png"
+						alt="Luxury Interior"
+						class="parallax-img"
+					/>
+				</div>
+			</div>
+		</section>
+
+		<!-- Final CTA -->
+		<section class="contact" id="contact">
+			<div class="container text-center">
+				<div class="cta-box glass scroll-reveal">
+					<span class="eyebrow">Experience Excellence</span>
+					<h2 class="section-title">
+						Reserve Your <span class="text-gold">Moment</span>
+					</h2>
+					<p>Join us at the intersection of taste and design.</p>
+					<a
+						href="mailto:atelier@nerocaffe.com"
+						class="btn btn-primary">Book a Tasting</a
+					>
+					<div class="contact-footer">
+						<p>12 Arany János Rd, Budapest</p>
+						<p>VII — XX Daily</p>
+					</div>
+				</div>
 			</div>
 		</section>
 	</main>
 
-	<footer class="glass">
-		<div class="container footer-content">
-			<div class="footer-logo">
-				<img
-					src="/logo.png"
-					alt="Nero Caffe Logo"
-					class="footer-logo-img"
-				/>
+	<footer class="footer">
+		<div class="container footer-grid">
+			<div class="footer-brand">
+				<img src="/logo.png" alt="Logo" class="footer-logo" />
+				<p>Defining the new standard of coffee culture.</p>
 			</div>
-			<p>
-				&copy; 2024 Nero Caffe. Minden jog fenntartva. | Prometheus
-				Digital Design
-			</p>
-			<div class="social-links">
-				<a href="#">Instagram</a>
-				<a href="#">Facebook</a>
+			<div class="footer-nav">
+				<div class="nav-col">
+					<h4>Social</h4>
+					<a href="#">Instagram</a>
+					<a href="#">Vimeo</a>
+				</div>
+				<div class="nav-col">
+					<h4>Legal</h4>
+					<a href="#">Privacy</a>
+					<a href="#">Terms</a>
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<div class="container">
+				<span>&copy; 2024 NERO CAFFE ATELIER</span>
+				<span>DESIGNED BY PROMETHEUS DIGITAL</span>
 			</div>
 		</div>
 	</footer>
 </Layout>
 
 <script>
-	const nav = document.querySelector("nav");
+	// Custom Cursor Logic
+	const cursor = document.querySelector(".cursor");
+	const follower = document.querySelector(".cursor-follower");
+	let mouseX = 0,
+		mouseY = 0;
+	let followerX = 0,
+		followerY = 0;
+
+	window.addEventListener("mousemove", (e) => {
+		mouseX = e.clientX;
+		mouseY = e.clientY;
+		cursor.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
+	});
+
+	function animate() {
+		followerX += (mouseX - followerX - 20) * 0.1;
+		followerY += (mouseY - followerY - 20) * 0.1;
+		follower.style.transform = `translate3d(${followerX}px, ${followerY}px, 0)`;
+		requestAnimationFrame(animate);
+	}
+	animate();
+
+	// Magnetic Effect for Buttons
+	const magneticElements = document.querySelectorAll(
+		".btn, .nav-item, .link-luxury",
+	);
+	magneticElements.forEach((el) => {
+		el.addEventListener("mousemove", (e) => {
+			const rect = el.getBoundingClientRect();
+			const x = e.clientX - rect.left - rect.width / 2;
+			const y = e.clientY - rect.top - rect.height / 2;
+			el.style.transform = `translate(${x * 0.3}px, ${y * 0.3}px)`;
+			follower.style.transform = `translate3d(${followerX}px, ${followerY}px, 0) scale(1.5)`;
+			follower.style.borderColor = "transparent";
+			follower.style.backgroundColor = "rgba(197, 160, 89, 0.2)";
+		});
+		el.addEventListener("mouseleave", () => {
+			el.style.transform = `translate(0px, 0px)`;
+			follower.style.transform = `translate3d(${followerX}px, ${followerY}px, 0) scale(1)`;
+			follower.style.borderColor = "var(--primary)";
+			follower.style.backgroundColor = "transparent";
+		});
+	});
+
+	// Parallax on Hero and Atmosphere
 	window.addEventListener("scroll", () => {
-		if (window.scrollY > 100) {
-			nav.classList.add("nav-scrolled");
+		const scrolled = window.scrollY;
+		const heroBg = document.getElementById("parallax-bg");
+		if (heroBg) {
+			heroBg.style.transform = `translateY(${scrolled * 0.4}px)`;
+		}
+
+		const parallaxImgs = document.querySelectorAll(".parallax-img");
+		parallaxImgs.forEach((img) => {
+			const depth = 0.1;
+			const move = scrolled * depth;
+			img.style.transform = `translateY(${move}px)`;
+		});
+
+		// Nav Appearance
+		const nav = document.querySelector(".nav");
+		if (scrolled > 100) {
+			nav.classList.add("active");
 		} else {
-			nav.classList.remove("nav-scrolled");
+			nav.classList.remove("active");
 		}
 	});
+
+	// Scroll Reveal
+	const observerOptions = {
+		threshold: 0.1,
+	};
+	const observer = new IntersectionObserver((entries) => {
+		entries.forEach((entry) => {
+			if (entry.isIntersecting) {
+				entry.target.classList.add("active");
+			}
+		});
+	}, observerOptions);
+
+	document
+		.querySelectorAll(".scroll-reveal, .reveal-text")
+		.forEach((el) => observer.observe(el));
 </script>
 
 <style>
-	/* Header / Nav */
-	nav {
+	/* Nav */
+	.nav {
 		position: fixed;
 		top: 0;
-		left: 0;
 		width: 100%;
 		z-index: 1000;
-		padding: 1.5rem 0;
-		transition: all 0.4s ease;
-		border-bottom: 1px solid transparent;
+		padding: 2.5rem 0;
+		transition: all 0.6s cubic-bezier(0.19, 1, 0.22, 1);
 	}
-	.nav-scrolled {
-		padding: 1rem 0;
-		background: rgba(10, 10, 10, 0.8);
-		backdrop-filter: blur(15px);
+	.nav.active {
+		padding: 1.25rem 0;
+		background: rgba(5, 5, 5, 0.9);
+		backdrop-filter: blur(20px);
 		border-bottom: 1px solid var(--glass-border);
 	}
 	.nav-content {
@@ -230,261 +353,404 @@ import Layout from "../layouts/Layout.astro";
 		align-items: center;
 	}
 	.logo-img {
-		height: 40px;
+		height: 35px;
 	}
 	.nav-links {
 		display: flex;
-		list-style: none;
 		align-items: center;
-		gap: 2.5rem;
+		gap: 3rem;
 	}
-	.nav-links a {
-		font-size: 0.9rem;
-		font-weight: 500;
+	.nav-item {
+		font-size: 0.7rem;
 		text-transform: uppercase;
-		letter-spacing: 1px;
+		letter-spacing: 0.2em;
+		font-weight: 500;
 	}
-	.nav-links a:hover {
+	.nav-item:hover {
 		color: var(--primary);
-	}
-	.btn-small {
-		padding: 0.6rem 1.5rem;
-		font-size: 0.75rem;
 	}
 
 	/* Hero */
 	.hero {
 		height: 100vh;
+		position: relative;
 		display: flex;
 		align-items: center;
-		position: relative;
 		overflow: hidden;
 		padding: 0;
 	}
-	.hero-bg {
+	.hero-image-wrapper {
 		position: absolute;
 		top: 0;
 		left: 0;
 		width: 100%;
-		height: 100%;
+		height: 120%; /* For parallax */
 		z-index: -1;
 	}
-	.hero-bg img {
+	.hero-image {
 		width: 100%;
 		height: 100%;
 		object-fit: cover;
+		filter: brightness(0.7);
 	}
-	.overlay {
+	.hero-overlay {
 		position: absolute;
 		top: 0;
 		left: 0;
 		width: 100%;
 		height: 100%;
-		background: linear-gradient(
-			90deg,
-			rgba(10, 10, 10, 0.9) 0%,
-			rgba(10, 10, 10, 0.4) 100%
+		background: radial-gradient(
+			circle at 30% 50%,
+			rgba(5, 5, 5, 0.8) 0%,
+			rgba(5, 5, 5, 0.1) 100%
 		);
 	}
 	.hero-content {
-		max-width: 700px;
+		z-index: 1;
+		width: 100%;
 	}
-	.hero h1 {
-		font-size: 4.5rem;
-		line-height: 1.1;
-		margin-bottom: 2rem;
-	}
-	.text-gold {
+	.eyebrow {
+		display: block;
+		font-size: 0.75rem;
+		letter-spacing: 0.4em;
 		color: var(--primary);
+		margin-bottom: 1.5rem;
+		font-weight: 600;
 	}
-	.hero p {
-		font-size: 1.25rem;
-		color: var(--text-muted);
-		margin-bottom: 3rem;
-		max-width: 500px;
-	}
-	.hero-actions {
-		display: flex;
-		gap: 1.5rem;
-	}
-
-	/* General Section Styles */
-	.section-title {
-		font-size: 3rem;
+	.hero-title {
+		font-size: clamp(3rem, 8vw, 6rem);
+		line-height: 1;
 		margin-bottom: 2rem;
 	}
-	.grid-2 {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		gap: 4rem;
-		align-items: center;
-	}
-	.text-center {
-		text-align: center;
-	}
-
-	/* About */
-	.about-text p {
+	.hero-desc {
 		font-size: 1.1rem;
+		max-width: 500px;
 		color: var(--text-muted);
-		margin-bottom: 2rem;
+		margin-bottom: 3.5rem;
 	}
-	.features {
+	.hero-cta {
+		display: flex;
+		align-items: center;
+		gap: 3rem;
+	}
+	.link-luxury {
+		font-size: 0.8rem;
+		letter-spacing: 0.2em;
+		text-transform: uppercase;
+		font-weight: 600;
+		border-bottom: 1px solid var(--border);
+		padding-bottom: 5px;
+	}
+	.link-luxury:hover {
+		border-color: var(--primary);
+	}
+
+	.scroll-indicator {
+		position: absolute;
+		bottom: 3rem;
+		left: 50%;
+		transform: translateX(-50%);
 		display: flex;
 		flex-direction: column;
-		gap: 1rem;
-	}
-	.feature-item {
-		display: flex;
 		align-items: center;
 		gap: 1rem;
+		opacity: 0.6;
 	}
-	.gold-dot {
-		display: block;
-		width: 8px;
-		height: 8px;
-		background-color: var(--primary);
-		border-radius: 50%;
+	.scroll-indicator span {
+		font-size: 0.6rem;
+		text-transform: uppercase;
+		letter-spacing: 0.3em;
 	}
-	.image-stack {
+	.mouse {
+		width: 20px;
+		height: 35px;
+		border: 1px solid var(--text);
+		border-radius: 10px;
 		position: relative;
 	}
-	.img-main {
-		border-radius: 4px;
-		position: relative;
-		z-index: 2;
-	}
-	.image-accent {
+	.mouse::after {
+		content: "";
 		position: absolute;
-		top: 20px;
-		left: 20px;
-		width: 100%;
-		height: 100%;
-		border: 1px solid var(--primary);
-		z-index: 1;
+		top: 8px;
+		left: 50%;
+		width: 2px;
+		height: 6px;
+		background: var(--primary);
+		transform: translateX(-50%);
+		animation: scroll 2s infinite;
 	}
 
-	/* Menu */
-	.glass-section {
-		background: linear-gradient(
-			180deg,
-			var(--bg) 0%,
-			#111 50%,
-			var(--bg) 100%
-		);
-	}
-	.section-header {
-		margin-bottom: 4rem;
-	}
-	.section-subtitle {
-		color: var(--text-muted);
-		text-transform: uppercase;
-		letter-spacing: 2px;
-		font-size: 0.8rem;
-	}
-	.menu-grid {
+	/* Philosophy Section */
+	.split-layout {
 		display: grid;
-		grid-template-columns: 1fr 1fr;
+		grid-template-columns: 1.2fr 1fr;
+		gap: 8rem;
+		align-items: center;
+	}
+	.image-frame {
+		position: relative;
+		padding: 2rem;
+	}
+	.reveal-img {
+		border-radius: 2px;
+		filter: grayscale(0.2);
+		transition: all 1s ease;
+	}
+	.frame-border {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 80%;
+		height: 80%;
+		border-top: 1px solid var(--primary);
+		border-left: 1px solid var(--primary);
+		z-index: -1;
+	}
+	.section-title {
+		font-size: clamp(2.5rem, 4vw, 3.5rem);
+		margin-bottom: 2.5rem;
+		line-height: 1.2;
+	}
+	.text-large {
+		font-size: 1.25rem;
+		margin-bottom: 4rem;
+		color: var(--text-muted);
+	}
+	.philosophies {
+		display: grid;
+		gap: 3rem;
+	}
+	.phil-item {
+		display: flex;
 		gap: 2rem;
 	}
-	.menu-item {
+	.num {
+		font-family: "Cormorant Garamond", serif;
+		font-size: 1.5rem;
+		color: var(--primary);
+	}
+	.phil-item h3 {
+		font-size: 1rem;
+		margin-bottom: 0.5rem;
+		letter-spacing: 0.1em;
+	}
+	.phil-item p {
+		font-size: 0.85rem;
+		color: var(--text-muted);
+	}
+
+	/* Collection Section */
+	.collection {
+		overflow: hidden;
+		padding-bottom: 15rem;
+	}
+	.horizontal-scroll {
 		display: flex;
-		justify-content: space-between;
+		gap: 2rem;
+		padding: 4rem;
+		overflow-x: auto;
+		scrollbar-width: none;
+		-ms-overflow-style: none;
+	}
+	.horizontal-scroll::-webkit-scrollbar {
+		display: none;
+	}
+
+	.card {
+		min-width: 400px;
+		padding: 4rem;
+		border-radius: 4px;
+		display: flex;
+		flex-direction: column;
+		gap: 1.5rem;
+		transition: all 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+	}
+	.card:hover {
+		transform: translateY(-20px);
+		border-color: var(--primary);
+	}
+	.card-num {
+		font-size: 0.8rem;
+		color: var(--primary);
+		opacity: 0.5;
+	}
+	.card h3 {
+		font-size: 1.5rem;
+	}
+	.card p {
+		font-size: 0.9rem;
+		color: var(--text-muted);
+		flex: 1;
+	}
+	.card-price {
+		font-family: "Cormorant Garamond", serif;
+		font-size: 1.4rem;
+		color: var(--primary);
+	}
+	.card-line {
+		height: 1px;
+		width: 40px;
+		background: var(--primary);
+		transition: width 0.6s ease;
+	}
+	.card:hover .card-line {
+		width: 100%;
+	}
+	.highlight {
+		background: var(--accent);
+		border: 1px solid var(--primary);
+	}
+
+	/* Atmosphere Section */
+	.atmosphere-grid {
+		display: grid;
+		grid-template-columns: 1fr 1.5fr;
+		gap: 6rem;
 		align-items: center;
-		padding: 2rem;
+	}
+	.atm-details {
+		margin-top: 3rem;
+		display: flex;
+		flex-direction: column;
+		gap: 1.5rem;
+	}
+	.det {
+		font-size: 0.8rem;
+		color: var(--text-muted);
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+	}
+	.det span {
+		color: var(--primary);
+	}
+	.atm-image-large {
+		overflow: hidden;
+		height: 600px;
 		border-radius: 4px;
 	}
-	.menu-info h3 {
-		font-size: 1.25rem;
-		margin-bottom: 0.5rem;
-	}
-	.menu-info p {
-		color: var(--text-muted);
-		font-size: 0.9rem;
-	}
-	.price {
-		color: var(--primary);
-		font-weight: 600;
-		font-family: "Playfair Display", serif;
+	.parallax-img {
+		width: 100%;
+		height: 120%;
+		object-fit: cover;
 	}
 
-	/* Interior */
-	.rounded {
-		border-radius: 8px;
+	/* Final CTA */
+	.cta-box {
+		padding: 8rem 2rem;
+		max-width: 800px;
+		margin: 0 auto;
 	}
-
-	/* Contact */
-	.contact-details {
-		margin: 2rem 0;
+	.contact-footer {
+		margin-top: 4rem;
 		color: var(--text-muted);
-	}
-	.phone-link {
-		font-size: 2rem;
-		font-family: "Playfair Display", serif;
-		color: var(--primary);
+		font-size: 0.8rem;
+		letter-spacing: 0.1em;
 	}
 
 	/* Footer */
-	footer {
-		padding: 4rem 0;
-		margin-top: 4rem;
+	.footer {
+		padding: 6rem 0 3rem;
+		background: #000;
+		border-top: 1px solid var(--glass-border);
 	}
-	.footer-content {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		gap: 2rem;
+	.footer-grid {
+		display: grid;
+		grid-template-columns: 1.5fr 1fr;
+		margin-bottom: 6rem;
 	}
-	.footer-logo-img {
+	.footer-logo {
 		height: 30px;
-		opacity: 0.7;
+		margin-bottom: 2rem;
+		opacity: 0.5;
 	}
-	.social-links {
+	.footer-brand p {
+		max-width: 300px;
+		color: var(--text-muted);
+		font-size: 0.9rem;
+	}
+	.footer-nav {
 		display: flex;
-		gap: 2rem;
+		gap: 6rem;
 	}
-	.social-links a {
+	.nav-col h4 {
+		font-size: 0.75rem;
+		margin-bottom: 2rem;
+		opacity: 0.4;
+	}
+	.nav-col a {
+		display: block;
+		margin-bottom: 1rem;
 		font-size: 0.8rem;
 		color: var(--text-muted);
 	}
+	.footer-bottom {
+		border-top: 1px solid var(--glass-border);
+		padding-top: 2rem;
+		font-size: 0.65rem;
+		color: var(--text-muted);
+		letter-spacing: 0.2em;
+	}
+	.footer-bottom .container {
+		display: flex;
+		justify-content: space-between;
+	}
 
 	/* Animations */
+	@keyframes scroll {
+		0% {
+			transform: translate(-50%, 0);
+			opacity: 1;
+		}
+		100% {
+			transform: translate(-50%, 15px);
+			opacity: 0;
+		}
+	}
+
+	.scroll-reveal {
+		opacity: 0;
+		transform: translateY(60px);
+		transition: all 1.2s cubic-bezier(0.19, 1, 0.22, 1);
+	}
+	.scroll-reveal.active {
+		opacity: 1;
+		transform: translateY(0);
+	}
+
 	.fade-in {
 		opacity: 0;
-		transform: translateY(30px);
-		animation: fadeInUp 1s forwards cubic-bezier(0.165, 0.84, 0.44, 1);
+		animation: fadeIn 1.5s forwards ease;
 	}
-	.delay-1 {
-		animation-delay: 0.3s;
-	}
-	.delay-2 {
-		animation-delay: 0.6s;
-	}
-
-	@keyframes fadeInUp {
+	@keyframes fadeIn {
 		to {
 			opacity: 1;
-			transform: translateY(0);
 		}
 	}
+	.delay-1 {
+		animation-delay: 0.5s;
+	}
+	.delay-2 {
+		animation-delay: 1s;
+	}
 
-	/* Mobile Responsive */
-	@media (max-width: 768px) {
-		.nav-links {
-			display: none;
-		}
-		.hero h1 {
-			font-size: 3rem;
-		}
-		.grid-2 {
+	/* Mobile */
+	@media (max-width: 992px) {
+		.split-layout,
+		.atmosphere-grid,
+		.footer-grid {
 			grid-template-columns: 1fr;
+			gap: 4rem;
+		}
+		.hero-title {
+			font-size: 3.5rem;
+		}
+		.card {
+			min-width: 300px;
+			padding: 2rem;
+		}
+		.nav-content {
+			flex-direction: column;
 			gap: 2rem;
-		}
-		.menu-grid {
-			grid-template-columns: 1fr;
-		}
-		section {
-			padding: 4rem 0;
 		}
 	}
 </style>
